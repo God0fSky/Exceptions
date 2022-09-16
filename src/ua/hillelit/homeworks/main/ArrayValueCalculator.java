@@ -37,7 +37,7 @@ public class ArrayValueCalculator {
     private static int arrayDataValidator(String arr, int sum, int i, int j) {
         try {
             sum += Integer.parseInt(arr);
-        } catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             throw new ArrayDataException("Неверный формат в ячейке: ", i, j);
         }
         return sum;
